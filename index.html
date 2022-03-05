@@ -5,10 +5,134 @@
     <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Page Home</title>
+    <title>Yahama.com</title>
 </head>
 <body>
+    <!-- Menu Incio -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Yamaha</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="offcanvas" href="#fadp">Publicidad</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     
-    <script src="js/bootstrap.min.js>"></script>
+    
+      <div class="container">
+        <h1>Deportivas</h1>
+        <hr>
+        <div class="display-1">Yamaha MT10</div>
+        <p class="lead text-center">Con una potencia de 118,kW (160,4PS) a 11.500rpm, esta naked
+            de altas prestaciones tiene las fuerza necesaria para dominar su entorno. Con un potente par moto lineal
+            de hasta 111,0Nm (11,3 kgf-m) a 9.000 rpm, la MT10 ofrece una aceleración que elvara los niveles de adrenalida a cualquier velocidad.
+             
+        </p>
+
+        <div class="caja">
+            <img data-bs-toggle="offcanvas" data-bs-target="#fadp" class="img-fluid mifoto" src="css/Yamaha.jpg" alt="Yamaha">
+        </div>
+
+        <hr>
+        <div><h1>Ficha Tecnica</h1></div>
+    
+
+        <table class="table table-blue table-striped table-hover"> 
+            <tr>
+                <td>MT 10</td>
+                <td>Cilindraje</td>
+                <td>Peso</td>
+                <td>Potencia</td>
+                <td>Torque</td>
+                <td>Tipo de motor</td>
+                <td>Cilindros</td>
+                <td>Arranque</td>
+                <td>Freno delantero</td>
+                <td>Potencia maxima</td>
+            </tr>
+          
+            <tr class="table-dark">
+                <td>*</td>
+                <td>998 cc</td>
+                <td>210 kg</td>
+                <td>118.0 kW</td>
+                <td>111.0 Nm</td>
+                <td>4 Tiempos</td>
+                <td>4 Cilindros </td>
+                <td>Electrico</td>
+                <td>Doble disco</td>
+                <td>158.2 Hp</td>
+            </tr>
+            
+        </table>
+
+    
+     
+    
+    </div>
+
+    <!-- Menu Izquierda flotante / menu tipi panel  -->
+    <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#fadp" role="button" aria-controls="offcanvasExample">
+        Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#fadp" aria-controls="offcanvasExample">
+        Button with data-bs-target
+      </button> --> -->
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="fadp" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!-- Final Menu -->
+
+
+    
+
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
